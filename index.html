@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurumella Durga Lalitha Priyanka | Portfolio</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Gurumella Durga Lalitha Priyanka | Developer Portfolio">
+  <meta name="description" content="Personal portfolio of Gurumella Durga Lalitha Priyanka - B.Tech IT student, Data Science & Full Stack Developer building ML systems and civic tech.">
+  <meta name="author" content="Gurumella Durga Lalitha Priyanka">
+  <meta name="keywords" content="Priyanka Gurumella, Durga Lalitha Priyanka, Portfolio, Machine Learning, Data Science, Full Stack Developer, MVGR College, ForensicAI">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://priyankagurumella.github.io/">
+  <meta property="og:title" content="Gurumella Durga Lalitha Priyanka | Portfolio">
+  <meta property="og:description" content="Developer in the making. I build data science and full stack projects. B.Tech Information Technology, 2028.">
+  <meta property="og:image" content="photo.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Gurumella Durga Lalitha Priyanka | Portfolio">
+  <meta property="twitter:description" content="Developer in the making. I build data science and full stack projects. B.Tech Information Technology, 2028.">
+  <meta property="twitter:image" content="photo.jpg">
+
+  <!-- Favicon (DLP in gold on black) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d0c0a'/%3E%3Ctext x='50%25' y='58%25' font-family='Anton, sans-serif' font-size='42' font-weight='bold' fill='%23c9a96e' text-anchor='middle' dominant-baseline='middle' letter-spacing='2'%3EDLP%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Toast Notification (Copied to clipboard) -->
+  <div class="toast-notification" id="copyToast" role="status" aria-live="polite">
+    <span class="toast-icon">&#10003;</span>
+    <span class="toast-text" id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="floating-back-to-top" id="floatingBackToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" class="fbtt-icon" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </button>
+
+  <!-- SVG Liquid Filter for Hero Distortion -->
+  <svg class="svg-filters" aria-hidden="true" style="position: absolute; width: 0; height: 0; pointer-events: none;">
+    <defs>
+      <filter id="liquid-filter">
+        <feTurbulence id="liquid-turbulence" type="fractalNoise" baseFrequency="0.0001 0.0001" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" id="liquid-displacement" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+  </div>
+
+  <!-- Curtain Preloader -->
+  <div class="preloader" id="preloader" aria-label="Loading screen">
+    <div class="loader-content">
+      <div class="loader-top">
+        <span class="loader-label">PORTFOLIO &bull; 2026</span>
+        <div class="loader-counter-wrap">
+          <span class="loader-counter" id="loaderCounter">0</span>
+          <span class="loader-percent">%</span>
+        </div>
+      </div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill" id="loaderBarFill"></div>
+      </div>
+      <div class="loader-greeting-box">
+        <p class="loader-greeting" id="loaderGreeting">Hey, welcome!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-monogram">DLP</span>
+        <span class="brand-sub">Priyanka Gurumella</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#profiles" class="nav-link">Profiles</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link nav-contact-btn">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION (Cream background #efe8da) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-tracker" id="heroGlow" aria-hidden="true"></div>
+      
+      <div class="hero-inner-container">
+        
+        <div class="hero-badge-wrap">
+          <!-- Rotating Badge: Exactly once around circle with DLP in center -->
+          <div class="rotating-badge" aria-label="Open to internships badge">
+            <svg viewBox="0 0 160 160" class="badge-svg" aria-hidden="true">
+              <defs>
+                <path id="badge-circle-path" d="M 80, 80 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" />
+              </defs>
+              <text class="badge-text">
+                <textPath xlink:href="#badge-circle-path" startOffset="0%" textLength="326.7" lengthAdjust="spacing">
+                  OPEN TO INTERNSHIPS &nbsp;&bull;&nbsp; 
+                </textPath>
+              </text>
+            </svg>
+            <div class="badge-center-icon">
+              <span class="badge-center-monogram">DLP</span>
+            </div>
+          </div>
+          <span class="handwritten-tag">Hello world, I'm</span>
+        </div>
+
+        <!-- Giant PRIYANKA text with liquid distortion effect -->
+        <div class="hero-title-container">
+          <h1 class="hero-title" id="heroTitle" aria-label="PRIYANKA">
+            <span class="hero-char">P</span>
+            <span class="hero-char">R</span>
+            <span class="hero-char">I</span>
+            <span class="hero-char">Y</span>
+            <span class="hero-char">A</span>
+            <span class="hero-char">N</span>
+            <span class="hero-char">K</span>
+            <span class="hero-char">A</span>
+          </h1>
+        </div>
+
+        <div class="hero-meta-row">
+          <div class="hero-full-name-block">
+            <h2 class="hero-full-name">Gurumella Durga Lalitha Priyanka</h2>
+            <p class="hero-academic-tag">B.Tech Information Technology &bull; 2024 &ndash; 2028</p>
+          </div>
+
+          <div class="hero-tagline-block">
+            <p class="hero-tagline">
+              Developer in the making. I build data science and full stack projects.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary magnetic-btn">
+                <span class="btn-text">See my projects</span>
+                <span class="btn-arrow">&darr;</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary magnetic-btn">
+                <span class="btn-text">Contact me</span>
+                <span class="btn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING STRIP -->
+    <div class="currently-learning-strip" aria-label="Current learning focus">
+      <div class="container learning-strip-inner">
+        <div class="learning-label-box">
+          <span class="pulsing-gold-dot" aria-hidden="true"></span>
+          <span class="learning-label">CURRENTLY LEARNING:</span>
+        </div>
+        <div class="learning-ticker-wrapper">
+          <span class="learning-ticker-item" id="learningTicker">Data Structures and Algorithms</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MARQUEE STRIP -->
+    <section class="marquee-section" aria-label="Skills Marquee">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-content">
+          <span class="marquee-item">Python</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">Java</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">C</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">C++</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">Data Structures and Algorithms</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">DBMS</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">SQL</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">HTML</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">CSS</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">JavaScript</span>
+          <span class="marquee-star">&bull;</span>
+        </div>
+        <!-- Duplicated track for continuous seamless loop -->
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item">Python</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">Java</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">C</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">C++</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">Data Structures and Algorithms</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">DBMS</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">SQL</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">HTML</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">CSS</span>
+          <span class="marquee-star">&bull;</span>
+          <span class="marquee-item">JavaScript</span>
+          <span class="marquee-star">&bull;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">01 /</span>
+          <span class="section-badge-label">PROFILE &amp; PERSPECTIVE</span>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Photo Column: Fixed 3:4, Full Color, 3D Tilt with Parallax Floating Glass Chips -->
+          <div class="about-photo-col">
+            <div class="photo-interactive-perspective" id="photoPerspective">
+              
+              <!-- Floating Glass Chip 1: Software Development -->
+              <div class="floating-glass-chip chip-sd" id="chipSd" aria-hidden="true">
+                <span class="chip-dot-gold"></span>
+                <span class="chip-text">Software Development</span>
+              </div>
+
+              <!-- Floating Glass Chip 2: Data Science -->
+              <div class="floating-glass-chip chip-ds" id="chipDs" aria-hidden="true">
+                <span class="chip-dot-gold"></span>
+                <span class="chip-text">Data Science</span>
+              </div>
+
+              <!-- Floating Glass Chip 3: Full Stack -->
+              <div class="floating-glass-chip chip-fs" id="chipFs" aria-hidden="true">
+                <span class="chip-dot-gold"></span>
+                <span class="chip-text">Full Stack</span>
+              </div>
+
+              <div class="photo-frame-wrapper" id="photoCard">
+                <div class="photo-container">
+                  <img src="photo.jpg" alt="Gurumella Durga Lalitha Priyanka" class="about-photo" id="aboutPhoto" loading="lazy">
+                  <!-- Specular Light Reflection Overlay -->
+                  <div class="photo-reflection-overlay" id="photoReflection" aria-hidden="true"></div>
+                </div>
+                <!-- Dynamic Gold Glow Backlight -->
+                <div class="photo-dynamic-glow" id="photoGlow" aria-hidden="true"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="about-text-col">
+            <div class="handwritten-intro">
+              <span class="script-greeting">Hello</span>
+              <span class="script-flourish">~</span>
+            </div>
+
+            <h2 class="about-statement-heading">
+              I build things where data meets code and problems get solved.
+            </h2>
+
+            <div class="about-body-text">
+              <p>
+                I'm a third-year Information Technology student at MVGR College of Engineering with a strong interest in software development. I enjoy designing and building complete software solutions, from clean user interfaces and reliable back ends to databases and intelligent features. I learn by building: I take a real problem, break it down, and turn it into working, well-structured software. I'm strengthening my fundamentals in Data Structures and Algorithms, DBMS and SQL, and I'm always exploring new tools and technologies. I'm preparing for product company roles and looking for internships where I can learn from experienced teams and contribute to real products.
+              </p>
+            </div>
+
+            <!-- Quick Facts Card (CGPA displayed only ONCE here as 9.66 / 10) -->
+            <div class="quick-facts-card">
+              <div class="facts-header">
+                <span class="facts-title">QUICK FACTS</span>
+                <span class="gold-sparkle">&#10022;</span>
+              </div>
+
+              <div class="facts-grid">
+                <div class="fact-item">
+                  <span class="fact-label">College</span>
+                  <span class="fact-value">MVGR College of Engineering, Vizianagaram</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">CGPA</span>
+                  <span class="fact-value highlight-gold">9.66 / 10</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Batch</span>
+                  <span class="fact-value">2024 to 2028</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Degree</span>
+                  <span class="fact-value">B.Tech in Information Technology</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Languages</span>
+                  <span class="fact-value">English, Telugu</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. EXPERTISE SECTION (Large accordion) -->
+    <section class="expertise-section section-padding" id="expertise">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">02 /</span>
+          <span class="section-badge-label">AREAS OF FOCUS</span>
+        </div>
+
+        <div class="section-header-split">
+          <h2 class="huge-heading">EXPERTISE</h2>
+          <p class="section-subtext">Core domains where engineering discipline meets practical implementation.</p>
+        </div>
+
+        <div class="accordion-container" id="expertiseAccordion">
+          
+          <!-- Accordion Row 1 -->
+          <div class="accordion-row is-active" data-accordion="item">
+            <button class="accordion-header" aria-expanded="true" aria-controls="acc-panel-1" id="acc-header-1">
+              <span class="accordion-number">01</span>
+              <span class="accordion-title">Data Science</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 4v16m-8-8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion-panel" id="acc-panel-1" role="region" aria-labelledby="acc-header-1">
+              <div class="accordion-panel-content">
+                <p class="accordion-desc">
+                  Python, analysis, machine learning with Scikit-learn and PyTorch. Building robust predictive systems, evaluating classification metrics, and applying deep learning computer vision architectures for real-world impact.
+                </p>
+                <div class="accordion-tags">
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">Data Analysis</span>
+                  <span class="tag-pill">Scikit-learn</span>
+                  <span class="tag-pill">PyTorch</span>
+                  <span class="tag-pill">Grad-CAM</span>
+                  <span class="tag-pill">Model Evaluation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Row 2 -->
+          <div class="accordion-row" data-accordion="item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="acc-panel-2" id="acc-header-2">
+              <span class="accordion-number">02</span>
+              <span class="accordion-title">Full Stack and Web</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 4v16m-8-8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion-panel" id="acc-panel-2" role="region" aria-labelledby="acc-header-2">
+              <div class="accordion-panel-content">
+                <p class="accordion-desc">
+                  HTML, CSS, JavaScript, plus Node.js and React Native from the civic project. Crafting intuitive client-side experiences and connected RESTful backends with automated geolocation, media uploads, and real-time state sync.
+                </p>
+                <div class="accordion-tags">
+                  <span class="tag-pill">HTML5</span>
+                  <span class="tag-pill">CSS3 / Modern Layouts</span>
+                  <span class="tag-pill">JavaScript (ES6+)</span>
+                  <span class="tag-pill">Node.js</span>
+                  <span class="tag-pill">React Native</span>
+                  <span class="tag-pill">RESTful APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Row 3 -->
+          <div class="accordion-row" data-accordion="item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="acc-panel-3" id="acc-header-3">
+              <span class="accordion-number">03</span>
+              <span class="accordion-title">Problem Solving</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 4v16m-8-8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion-panel" id="acc-panel-3" role="region" aria-labelledby="acc-header-3">
+              <div class="accordion-panel-content">
+                <p class="accordion-desc">
+                  Data Structures and Algorithms in C, C++, Java and Python, practiced on LeetCode and CodeChef. Focused on computational complexity, dynamic programming, tree/graph traversals, and scalable algorithmic logic.
+                </p>
+                <div class="accordion-tags">
+                  <span class="tag-pill">Algorithms</span>
+                  <span class="tag-pill">Data Structures</span>
+                  <span class="tag-pill">C / C++</span>
+                  <span class="tag-pill">Java</span>
+                  <span class="tag-pill">LeetCode</span>
+                  <span class="tag-pill">CodeChef</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Row 4 -->
+          <div class="accordion-row" data-accordion="item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="acc-panel-4" id="acc-header-4">
+              <span class="accordion-number">04</span>
+              <span class="accordion-title">Databases</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 4v16m-8-8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="accordion-panel" id="acc-panel-4" role="region" aria-labelledby="acc-header-4">
+              <div class="accordion-panel-content">
+                <p class="accordion-desc">
+                  DBMS and SQL. Relational schema architecture, normalization, ACID transaction integrity, advanced multi-table joins, subqueries, indexing strategies, and PostgreSQL database management.
+                </p>
+                <div class="accordion-tags">
+                  <span class="tag-pill">Relational DBMS</span>
+                  <span class="tag-pill">SQL</span>
+                  <span class="tag-pill">PostgreSQL</span>
+                  <span class="tag-pill">Database Normalization</span>
+                  <span class="tag-pill">Query Optimization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SKILLS SECTION (Grouped chips) -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">03 /</span>
+          <span class="section-badge-label">TECHNICAL TOOLKIT</span>
+        </div>
+
+        <div class="section-header-split">
+          <h2 class="huge-heading">SKILLS</h2>
+          <p class="section-subtext">Proficiencies developed through academic excellence and hands-on system building.</p>
+        </div>
+
+        <div class="skills-groups-grid">
+          
+          <!-- Group 1: Programming -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <span class="category-index">01</span>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip"><span class="chip-dot"></span>Python</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Java</span>
+              <span class="skill-chip"><span class="chip-dot"></span>C</span>
+              <span class="skill-chip"><span class="chip-dot"></span>C++</span>
+            </div>
+          </div>
+
+          <!-- Group 2: Core CS -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <span class="category-index">02</span>
+              <h3 class="category-title">Core CS</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip"><span class="chip-dot"></span>Data Structures and Algorithms</span>
+              <span class="skill-chip"><span class="chip-dot"></span>DBMS</span>
+              <span class="skill-chip"><span class="chip-dot"></span>SQL</span>
+            </div>
+          </div>
+
+          <!-- Group 3: Web -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <span class="category-index">03</span>
+              <h3 class="category-title">Web</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip"><span class="chip-dot"></span>HTML</span>
+              <span class="skill-chip"><span class="chip-dot"></span>CSS</span>
+              <span class="skill-chip"><span class="chip-dot"></span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Group 4: Practice -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <span class="category-index">04</span>
+              <h3 class="category-title">Practice</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip highlight-chip"><span class="chip-dot gold-dot"></span>LeetCode</span>
+              <span class="skill-chip highlight-chip"><span class="chip-dot gold-dot"></span>CodeChef</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. PROJECTS SECTION (Large numbered rows with rich descriptions and cursor glow) -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">04 /</span>
+          <span class="section-badge-label">SELECTED WORKS</span>
+        </div>
+
+        <div class="section-header-split">
+          <h2 class="huge-heading">PROJECTS</h2>
+          <p class="section-subtext">Real-world software combining artificial intelligence, backend services, and clean interfaces.</p>
+        </div>
+
+        <div class="project-rows-list">
+          
+          <!-- Project 01: ForensicAI -->
+          <article class="project-row" data-project="1">
+            <div class="project-glow-layer" aria-hidden="true"></div>
+            <div class="project-number-col">
+              <span class="project-index">01</span>
+              <span class="project-status-badge status-completed">Completed</span>
+            </div>
+
+            <div class="project-info-col">
+              <div class="project-header-bar">
+                <h3 class="project-name">ForensicAI</h3>
+                <span class="project-type-tag">AI &bull; Deepfake &amp; Fake News Detection</span>
+              </div>
+              
+              <p class="project-description">
+                An AI-powered system that detects fake news and manipulated media in one place. It works in two phases. For text, a TF-IDF and Passive Aggressive Classifier model checks news articles and reaches about 99.6% accuracy. For images, an EfficientNet-B0 deep learning model trained with transfer learning identifies deepfakes with about 83% validation accuracy, and Grad-CAM heatmaps show which regions influenced the decision so the result can be explained. The back end is built with Flask and the front end is deployed on GitHub Pages.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">EfficientNet-B0</span>
+                <span class="tech-tag">Grad-CAM</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- TODO: Replace PLACEHOLDER repository link with actual GitHub repository when public -->
+                <a href="https://github.com/priyankagurumella" target="_blank" rel="noopener noreferrer" class="btn btn-row-outline magnetic-btn">
+                  <span class="btn-text">View code</span>
+                  <span class="btn-arrow">&nearr;</span>
+                </a>
+                <!-- TODO: Replace PLACEHOLDER demo link with deployed model endpoint -->
+                <a href="https://github.com/priyankagurumella" target="_blank" rel="noopener noreferrer" class="btn btn-row-gold magnetic-btn">
+                  <span class="btn-text">Live demo</span>
+                  <span class="btn-arrow">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Civic Problem Reporter -->
+          <article class="project-row" data-project="2">
+            <div class="project-glow-layer" aria-hidden="true"></div>
+            <div class="project-number-col">
+              <span class="project-index">02</span>
+              <span class="project-status-badge status-progress">In progress</span>
+            </div>
+
+            <div class="project-info-col">
+              <div class="project-header-bar">
+                <h3 class="project-name">Civic Problem Reporter</h3>
+                <span class="project-type-tag">Civic Tech &bull; Multi-App System</span>
+              </div>
+              
+              <p class="project-description">
+                A two-app platform that connects citizens with the people who fix local problems. In the User app, citizens report an issue with a photo and location. In the Agent app, field agents receive the task, resolve it, and upload an after photo. An AI vision model (Llama 3.2 Vision on Cloudflare Workers AI) detects the issue from the photo and audits the before and after images to confirm it was truly resolved. The platform also includes push notifications, geo-tagging, secure login with JWT, image uploads, reward points for active citizens, and a web admin dashboard.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Cloudflare Workers AI</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://ai-community-problem-reporter.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-row-gold magnetic-btn">
+                  <span class="btn-text">Open live app</span>
+                  <span class="btn-arrow">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: IoT Predictive Maintenance -->
+          <article class="project-row project-row-coming" data-project="3">
+            <div class="project-glow-layer" aria-hidden="true"></div>
+            <div class="project-number-col">
+              <span class="project-index">03</span>
+              <span class="project-status-badge status-progress">Coming soon</span>
+            </div>
+
+            <div class="project-info-col">
+              <div class="project-header-bar">
+                <h3 class="project-name">IoT Predictive Maintenance</h3>
+                <span class="project-type-tag">Embedded Systems &bull; Hardware + Software</span>
+              </div>
+              
+              <p class="project-description">
+                A predictive maintenance system for machines. The goal is to monitor the condition of machines with IoT sensors, analyze the data to spot early warning signs of wear or faults, and predict a failure before it happens. This helps teams plan maintenance in advance, reduce unexpected downtime, and lower repair costs. Currently being designed and built.
+              </p>
+
+              <div class="coming-soon-banner">
+                <span class="pulsing-indicator"></span>
+                <span>Active development phase &bull; Sensors and failure prediction pipeline in progress</span>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Sensors</span>
+                <span class="tech-tag">Predictive Maintenance</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- TODO: Replace PLACEHOLDER repository link with IoT project repo -->
+                <a href="https://github.com/priyankagurumella" target="_blank" rel="noopener noreferrer" class="btn btn-row-outline magnetic-btn">
+                  <span class="btn-text">Coming soon &bull; Follow updates</span>
+                  <span class="btn-arrow">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CODING PROFILES SECTION (No buttons, strictly factual) -->
+    <section class="profiles-section section-padding" id="profiles">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">05 /</span>
+          <span class="section-badge-label">COMPETITIVE PRACTICE</span>
+        </div>
+
+        <div class="section-header-split">
+          <h2 class="huge-heading">PROFILES</h2>
+          <p class="section-subtext">Active algorithmic problem solving and structured curriculum practice.</p>
+        </div>
+
+        <div class="profiles-grid">
+          
+          <!-- LeetCode Card -->
+          <div class="profile-card" data-profile="leetcode">
+            <div class="profile-card-top">
+              <div class="profile-brand-box">
+                <svg class="profile-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.816 3.705 5.92 5.92 0 0 0 2.22-.061 5.86 5.86 0 0 0 2.015-.903l6.09-5.183a1.38 1.38 0 0 0 .19-1.94 1.354 1.354 0 0 0-1.916-.192l-6.09 5.182a3.17 3.17 0 0 1-1.077.48 3.197 3.197 0 0 1-1.218.033 3.23 3.23 0 0 1-2.618-2.023 3.013 3.013 0 0 1-.19-.554 3.02 3.02 0 0 1-.033-1.294 2.87 2.87 0 0 1 .66-1.15l3.855-4.127 5.405-5.788A1.373 1.373 0 0 0 13.483 0z"/>
+                  <path d="M12.924 10.878a1.37 1.37 0 0 0-1.937.195l-3.04 3.256a1.38 1.38 0 1 0 2.013 1.88l3.04-3.256a1.37 1.37 0 0 0-.076-2.075z"/>
+                </svg>
+                <div class="profile-brand-names">
+                  <h3 class="profile-platform">LeetCode</h3>
+                  <span class="profile-username">@priyankagurumella</span>
+                </div>
+              </div>
+              <span class="profile-status-tag status-tag-progress">In progress</span>
+            </div>
+
+            <p class="profile-bio">
+              Still going. I solve problems regularly to strengthen Data Structures and Algorithms.
+            </p>
+          </div>
+
+          <!-- CodeChef Card -->
+          <div class="profile-card" data-profile="codechef">
+            <div class="profile-card-top">
+              <div class="profile-brand-box">
+                <div class="codechef-custom-icon">
+                  <span>CC</span>
+                </div>
+                <div class="profile-brand-names">
+                  <h3 class="profile-platform">CodeChef</h3>
+                  <span class="profile-username">@priyankagurumella</span>
+                </div>
+              </div>
+              <span class="profile-status-tag status-tag-gold">Completed</span>
+            </div>
+
+            <p class="profile-bio">
+              Completed the CodeChef DSA with Java course.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. JOURNEY SECTION (Vertical timeline with gold dots, no repeated CGPA) -->
+    <section class="journey-section section-padding" id="journey">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">06 /</span>
+          <span class="section-badge-label">ACADEMIC PATH</span>
+        </div>
+
+        <div class="section-header-split">
+          <h2 class="huge-heading">JOURNEY</h2>
+          <p class="section-subtext">A continuous trajectory of academic rigor and technical foundations.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line-track"></div>
+
+          <!-- Timeline Item 1: B.Tech (CGPA removed to show only once on page) -->
+          <div class="timeline-item" data-timeline="1">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-gold-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year-badge">2024 &ndash; 2028 &bull; Present</div>
+              <h3 class="timeline-degree">B.Tech in Information Technology</h3>
+              <h4 class="timeline-institution">MVGR College of Engineering, Vizianagaram</h4>
+              <p class="timeline-desc">
+                Currently pursuing 3rd year in IT with strong fundamentals in algorithms, machine learning architectures, web technologies, and relational databases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item" data-timeline="2">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-gold-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year-badge">2022 &ndash; 2024</div>
+              <h3 class="timeline-degree">Intermediate (MPC &ndash; Mathematics, Physics, Chemistry)</h3>
+              <h4 class="timeline-institution">Sri Chaitanya Junior College</h4>
+              <p class="timeline-desc">
+                Completed pre-university education with high academic distinction, developing rigorous analytical thinking and mathematical problem-solving skills.
+              </p>
+              <div class="timeline-score-pill">
+                <span class="score-label">Percentage:</span>
+                <span class="score-value highlight-gold">97.6%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item" data-timeline="3">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-gold-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year-badge">2021 &ndash; 2022</div>
+              <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+              <h4 class="timeline-institution">Sri Chaitanya Techno School</h4>
+              <p class="timeline-desc">
+                Built foundational academic excellence in sciences, logic, and computational reasoning.
+              </p>
+              <div class="timeline-score-pill">
+                <span class="score-label">Percentage:</span>
+                <span class="score-value highlight-gold">88.33%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. CERTIFICATIONS SECTION (Clean text lists with search and instant category filter, no count numbers) -->
+    <section class="certifications-section section-padding" id="certifications">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">07 /</span>
+          <span class="section-badge-label">CREDENTIALS &amp; LEARNING</span>
+        </div>
+
+        <div class="section-header-split">
+          <h2 class="huge-heading">CERTIFICATIONS</h2>
+          <p class="section-subtext">Recognized coursework and hands-on skill verifications across Cloud, AI, and Engineering.</p>
+        </div>
+
+        <!-- Search Box & Filter Controls (No numbers) -->
+        <div class="cert-controls-panel">
+          <div class="cert-search-wrap">
+            <svg viewBox="0 0 24 24" class="cert-search-icon" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+              <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="text" id="certSearchInput" class="cert-search-input" placeholder="Search certifications by name..." aria-label="Search certifications">
+            <button class="cert-search-clear" id="certSearchClear" aria-label="Clear search" style="display: none;">&times;</button>
+          </div>
+
+          <div class="cert-filter-bar" role="tablist" aria-label="Certification categories">
+            <button class="cert-filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="cert-filter-btn" data-filter="cloud" role="tab" aria-selected="false">Cloud</button>
+            <button class="cert-filter-btn" data-filter="ai-data" role="tab" aria-selected="false">AI and Data</button>
+            <button class="cert-filter-btn" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+            <button class="cert-filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
+          </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="cert-no-results" id="certNoResults" style="display: none;">
+          <p>No certifications match your search query.</p>
+        </div>
+
+        <div class="cert-columns-grid" id="certColumnsGrid">
+          
+          <!-- Column 1: Cloud -->
+          <div class="cert-group-column" data-category="cloud">
+            <div class="cert-column-header">
+              <div class="cert-col-badge">
+                <span class="cert-badge-dot"></span>
+                <span>Cloud (AWS)</span>
+              </div>
+            </div>
+            
+            <ul class="cert-text-list">
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">AWS Cloud Practitioner Essentials</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">AWS Technical Essentials</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">AWS Billing and Cost Management</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">AWS Foundations: Getting Started with the AWS Cloud Essentials</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Introduction to Amazon EC2</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Introduction to Amazon S3</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Introduction to Amazon VPC</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Introduction to AWS IAM</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Introduction to Amazon CloudFront</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Job Roles in the Cloud</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Getting Started with Cloud Acquisition</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Cloud Essentials Knowledge Badge Readiness Path</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Developing Generative AI Solutions</span></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: AI and Data -->
+          <div class="cert-group-column" data-category="ai-data">
+            <div class="cert-column-header">
+              <div class="cert-col-badge">
+                <span class="cert-badge-dot"></span>
+                <span>AI and Data</span>
+              </div>
+            </div>
+            
+            <ul class="cert-text-list">
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Cisco: Introduction to Modern AI</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Cisco: Apply AI to Analyze Customer Reviews</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Cisco: Data Analytics Essentials</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Introduction to Data Science (Simplilearn SkillUP)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Power BI for Beginners (Simplilearn SkillUP)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Trust and Security with Google Cloud (Simplilearn SkillUP)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">What is Generative AI? (LinkedIn Learning)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Critical Thinking in the AI Era (HP LIFE)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Tata GenAI Powered Data Analytics Job Simulation</span></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Programming -->
+          <div class="cert-group-column" data-category="programming">
+            <div class="cert-column-header">
+              <div class="cert-col-badge">
+                <span class="cert-badge-dot"></span>
+                <span>Programming and Databases</span>
+              </div>
+            </div>
+            
+            <ul class="cert-text-list">
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Python Essentials 1 (Cisco Networking Academy)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Python Essentials 2 (Cisco Networking Academy)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">SQL Basic</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">SQL Intermediate</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">SQL Advanced</span></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Other -->
+          <div class="cert-group-column" data-category="other">
+            <div class="cert-column-header">
+              <div class="cert-col-badge">
+                <span class="cert-badge-dot"></span>
+                <span>Other</span>
+              </div>
+            </div>
+            
+            <ul class="cert-text-list">
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Quantum Fundamentals (WISER)</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Google Developer Group certificate of appreciation</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">TCS iON certificate of achievement</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">EduSkills virtual internship certificate</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">Skill India certificate</span></li>
+              <li class="cert-item"><span class="cert-gold-dash">&bull;</span><span class="cert-name">APSCHE and EduSkills completion certificate</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        
+        <div class="section-label-wrap">
+          <span class="section-num">08 /</span>
+          <span class="section-badge-label">GET IN TOUCH</span>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Left -->
+          <div class="contact-info-col">
+            <h2 class="contact-main-heading">
+              Let's create something meaningful
+            </h2>
+
+            <p class="contact-intro-text">
+              Whether you are looking for an ambitious intern for software engineering, data science, or full stack roles, or want to collaborate on innovative projects — my inbox is always open.
+            </p>
+
+            <div class="contact-channels-list">
+              
+              <!-- Phone with Copy Button -->
+              <div class="contact-channel-row">
+                <a href="tel:7673926229" class="contact-channel-item flex-grow">
+                  <div class="channel-icon-box">
+                    <svg viewBox="0 0 24 24" class="ch-svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" fill="none" stroke-width="1.8"/></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Phone</span>
+                    <span class="channel-val">7673926229</span>
+                  </div>
+                  <span class="channel-arrow">&rarr;</span>
+                </a>
+                <button class="copy-action-btn magnetic-btn" data-copy="7673926229" aria-label="Copy phone number">
+                  <span class="copy-btn-text">Copy</span>
+                  <svg viewBox="0 0 24 24" class="copy-btn-icon" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </button>
+              </div>
+
+              <!-- Email with Copy Button -->
+              <div class="contact-channel-row">
+                <a href="mailto:priyagurumella@gmail.com" class="contact-channel-item flex-grow">
+                  <div class="channel-icon-box">
+                    <svg viewBox="0 0 24 24" class="ch-svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" fill="none" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" stroke="currentColor" fill="none" stroke-width="1.8"/></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email</span>
+                    <span class="channel-val">priyagurumella@gmail.com</span>
+                  </div>
+                  <span class="channel-arrow">&rarr;</span>
+                </a>
+                <button class="copy-action-btn magnetic-btn" data-copy="priyagurumella@gmail.com" aria-label="Copy email address">
+                  <span class="copy-btn-text">Copy</span>
+                  <svg viewBox="0 0 24 24" class="copy-btn-icon" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/durga-lalitha-priyanka-gurumella-096b10325" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg viewBox="0 0 24 24" class="ch-svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" fill="none" stroke-width="1.8"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" fill="none" stroke-width="1.8"/><circle cx="4" cy="4" r="2" stroke="currentColor" fill="none" stroke-width="1.8"/></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-val">durga-lalitha-priyanka-gurumella</span>
+                </div>
+                <span class="channel-arrow">&nearr;</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/priyankagurumella" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg viewBox="0 0 24 24" class="ch-svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" fill="none" stroke-width="1.8"/></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-val">priyankagurumella</span>
+                </div>
+                <span class="channel-arrow">&nearr;</span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Contact Form Right (Opens mailto with prefilled values) -->
+          <div class="contact-form-col">
+            <div class="form-wrapper-card">
+              <div class="form-card-header">
+                <h3 class="form-card-title">Send a Direct Message</h3>
+                <p class="form-card-sub">Fills directly into your preferred email client.</p>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name</label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Maya Lin" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email</label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. maya@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject" class="form-label">Subject</label>
+                  <input type="text" id="senderSubject" name="subject" class="form-input" placeholder="e.g. Internship Opportunity / Collaboration" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message</label>
+                  <textarea id="senderMessage" name="message" class="form-textarea" rows="5" placeholder="Hi Priyanka, I came across your portfolio and wanted to discuss..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit-gold magnetic-btn" id="submitBtn">
+                  <span class="btn-text">Open in Email App</span>
+                  <span class="btn-arrow">&rarr;</span>
+                </button>
+              </form>
+
+              <div class="form-status-msg" id="formStatusMsg" aria-live="polite"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-monogram">DLP</span>
+        <p class="footer-copy">&copy; 2026 Gurumella Durga Lalitha Priyanka.</p>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-craft-note">Handcrafted with HTML, CSS, JavaScript &amp; GSAP</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top magnetic-btn" aria-label="Back to top">
+          <span>Back to top</span>
+          <span class="top-arrow">&uarr;</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
